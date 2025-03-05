@@ -81,6 +81,7 @@ npm start
 
 - Docker
 - Docker Compose
+- Доступ к внешней базе данных PostgreSQL
 
 ### Шаги по развертыванию
 
@@ -100,7 +101,7 @@ npm start
 3. Отредактируйте файл `.env`, указав необходимые параметры:
 
    - `TELEGRAM_BOT_TOKEN` - токен вашего Telegram бота
-   - `DB_HOST` - для Docker Compose можно оставить `db` (имя сервиса)
+   - `DB_HOST`, `DB_USERNAME`, `DB_PASSWORD`, `DB_DATABASE` - параметры подключения к вашей внешней базе данных
    - Другие параметры по необходимости
 
 4. Запустите приложение с помощью Docker Compose:

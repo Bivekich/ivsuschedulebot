@@ -34,7 +34,9 @@ export const formatDaySchedule = (
   weekDay: WeekDay
 ): string => {
   if (lessons.length === 0) {
-    return `*${getWeekDayName(weekDay)}*\n\nЗанятий нет 🎉`;
+    return `*${getWeekDayName(
+      weekDay
+    )}*\n\nЗанятий нет 🎉\n\n_© Разработка: BivekiGroup (biveki.ru)_`;
   }
 
   let result = `*${getWeekDayName(weekDay)}*\n\n`;
@@ -46,6 +48,8 @@ export const formatDaySchedule = (
       result += '\n───────────────\n';
     }
   });
+
+  result += '\n\n_© Разработка: BivekiGroup (biveki.ru)_';
 
   return result;
 };
@@ -97,6 +101,8 @@ export const formatWeekSchedule = (
   if (!hasLessons) {
     result += 'На этой неделе занятий нет 🎉';
   }
+
+  result += '\n\n_© Разработка: BivekiGroup (biveki.ru)_';
 
   return result;
 };

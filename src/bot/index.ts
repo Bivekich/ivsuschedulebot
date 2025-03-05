@@ -229,6 +229,8 @@ bot.hears('ℹ️ Информация', async (ctx) => {
   message += '/group - Выбрать группу\n';
   message += '/admin - Войти в панель администратора\n';
 
+  message += '\n\n© Разработка сайтов, приложений BivekiGroup (biveki.ru)';
+
   await ctx.reply(message);
 });
 
