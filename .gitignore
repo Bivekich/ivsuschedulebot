@@ -1,0 +1,31 @@
+# Зависимости
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Сборка
+dist/
+build/
+
+# Окружение
+.env
+.env.docker
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Логи
+logs/
+*.log
+
+# Редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ОС
+.DS_Store
+Thumbs.db
